@@ -1,0 +1,24 @@
+﻿<Window x:Class="EasyPlaylist.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="EasyPlaylist" Height="650" Width="700" WindowStartupLocation="CenterScreen">
+    <Grid Name="mainGrid">
+        <TextBox Height="545" HorizontalAlignment="Left" Margin="12,54,0,0" Name="queryList" VerticalAlignment="Top" Width="301" AcceptsReturn="True" TextWrapping="Wrap" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" />
+        <TextBlock Height="36" HorizontalAlignment="Left" Margin="12,12,0,0" Name="textBlock1" Text="Query list:" VerticalAlignment="Top" Width="210" FontWeight="Normal" FontSize="20" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="333,54,0,0" Name="textBlock2" Text="Playlist name:" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="333,83,0,0" Name="playlistName" VerticalAlignment="Top" Width="193" />
+        <Button Content="Make playlist" Height="51" HorizontalAlignment="Left" Margin="333,338,0,0" Name="button1" VerticalAlignment="Top" Width="205" FontSize="22" FontWeight="Normal" Click="button1_Click" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="333,118,0,0" Name="textBlock3" Text="Playlist summary:" VerticalAlignment="Top" />
+        <TextBox Height="46" HorizontalAlignment="Left" Margin="333,147,0,0" Name="playlistSummary" VerticalAlignment="Top" Width="287" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="333,211,0,0" Name="textBlock4" Text="Username:" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="395,211,0,0" Name="username" VerticalAlignment="Top" Width="193" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="333,240,0,0" Name="textBlock5" Text="Password:" VerticalAlignment="Top" />
+        <TextBlock Height="42" HorizontalAlignment="Left" Margin="333,281,0,0" Name="infoBox" Text="" VerticalAlignment="Top" Width="325" FontSize="17" />
+        <PasswordBox Height="23" HorizontalAlignment="Left" Margin="395,240,0,0" Name="password" VerticalAlignment="Top" Width="193" />
+        <Button Content="Clear" Height="51" HorizontalAlignment="Left" Margin="544,338,0,0" Name="button2" VerticalAlignment="Top" Width="83" FontSize="22" Click="button2_Click" />
+        <Grid Height="107" HorizontalAlignment="Left" Margin="333,415,0,0" Name="urlGrid" VerticalAlignment="Top" Width="326" Visibility="Hidden">
+            <TextBlock Height="23" HorizontalAlignment="Left" Name="textBlock6" Text="Playlist url:" VerticalAlignment="Top" />
+            <TextBox Height="46" HorizontalAlignment="Left" Name="url" VerticalAlignment="Top" Width="287" IsReadOnly="True" Margin="0,29,0,0" />
+        </Grid>
+    </Grid>
+</Window>
